@@ -32,7 +32,7 @@ input::-webkit-inner-spin-button {
   width: 400px;
   height: fit-content;
   border-radius: 10px;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  box-shadow: rgba(100, 100, 111, 0.452) 0px 7px 29px 0px;
   padding: 20px;
 }
 .empty-circles{
