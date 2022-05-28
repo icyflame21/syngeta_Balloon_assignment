@@ -29,7 +29,7 @@ download the .zip file. Extract the contents of the zip file, then open your ter
 > npm start
 ```
 
-## Testing With Enzyme 🧪
+### Testing With Enzyme 🧪
 
 ```
 > git clone https://github.com/icyflame21/syngeta_Balloon_assignment.git
@@ -37,6 +37,7 @@ download the .zip file. Extract the contents of the zip file, then open your ter
 > npm install
 > npm test
 ```
+Results are collected in __snapshots__ folder 
 
 ## Tech Stack 💻
 
@@ -50,7 +51,7 @@ download the .zip file. Extract the contents of the zip file, then open your ter
 - The user can get back the circles that were shot by clicking the corresponding circles residing in the empty div which is restored to it’s original position in the circle container. 
 
 
-## Snap Shots 📷
+## Snap Shot 📷
 
 **Landing Page**
 
