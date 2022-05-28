@@ -31,14 +31,13 @@ input::-webkit-inner-spin-button {
   margin-left: 8%;
   width: 400px;
   height: fit-content;
-  border-radius: 5px;
+  border-radius: 10px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  border: 1px solid gray;
   padding: 20px;
 }
 .empty-circles{
-  align-items: center;
   display: flex;
+  align-items: center;
   flex-wrap: wrap;
   gap: 20px;
   cursor: pointer;
@@ -56,9 +55,9 @@ input::-webkit-inner-spin-button {
 #number{
   padding: 10px;
   font-size: 18px;
-  margin: 8px;
+  margin: 12px;
   width: 280px;
-  border-radius: 4px;
+  border-radius: 5px;
   outline: none;
   border: none;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -67,8 +66,9 @@ input::-webkit-inner-spin-button {
 .submit{
   padding: 10px;
   font-size: 18px;
+  font-weight: 500;
   margin: 8px;
-  border-radius: 4px;
+  border-radius: 5px;
   outline: none;
   border: none;
   width: fit-content;
@@ -77,6 +77,7 @@ input::-webkit-inner-spin-button {
   color: aliceblue;
   background-color: black;
   border: 1px solid grey;
+  transition: all .3s ease-in ;
 }
 .submit:focus{
   background-color: aliceblue;
@@ -84,33 +85,62 @@ input::-webkit-inner-spin-button {
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 
 }
+.submit:hover{
+  background-color: orange;
+  color: whitesmoke;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border: none;
+}
 .circle {
   width: 100px;
   height: 100px;
   border-radius: 50%;
+  padding-top: 40%;
 }
 #circle-1,
 #empty-circle-1 {
+  text-align: center;
+  font-size: large;
+  place-items: center;
   background-color: rgba(0, 255, 255, 0.229);
   border: 2px solid rgba(0, 255, 255, 0.848);
 }
 #circle-2,
 #empty-circle-2 {
+  text-align: center;
+  font-size: large;
+  place-items: center;
   background-color: rgba(0, 128, 0, 0.226);
   border: 2px solid rgba(0, 128, 0, 0.848);
 }
 #circle-3,
 #empty-circle-3 {
+  text-align: center;
+  font-size: large;
+  place-items: center;
   background-color: rgba(0, 0, 255, 0.229);
   border: 2px solid rgba(0, 0, 255, 0.848);
 }
 #circle-4,
 #empty-circle-4 {
+  text-align: center;
+  font-size: large;
+  place-items: center;
   background-color: rgba(128, 0, 128, 0.229);
   border: 2px solid rgba(128, 0, 128, 0.848);
 }
 #circle-5,
 #empty-circle-5 {
+  text-align: center;
+  font-size: large;
+  place-items: center;
   background-color: rgba(255, 255, 0, 0.229);
   border: 2px solid rgba(255, 255, 0, 0.48);
+}
+#empty-circle-1,
+#empty-circle-2,
+#empty-circle-3,
+#empty-circle-4,
+#empty-circle-5{
+  padding-top: 10%;
 }

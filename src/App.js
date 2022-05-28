@@ -6,6 +6,9 @@ function App() {
 
   const onSubmit = () => {
     if (value > 5 || value < 1) alert("Please enter a number between 1 to 5");
+    let val = document.getElementById(`empty-circle-${value}`);
+    if (val.style.display == "block") alert("Number already present in the container\nEnter a different number");
+   
     document.getElementById(`circle-${value}`).style.display = "none";
     document.getElementById(`empty-circle-${value}`).style.display = "block";
     setValue("")
@@ -25,27 +28,27 @@ function App() {
             className="circle"
             id="empty-circle-1"
             style={{ display: "none" }}
-          ></div>
+          >1</div>
           <div
             className="circle"
             id="empty-circle-2"
             style={{ display: "none" }}
-          ></div>
+          >2</div>
           <div
             className="circle"
             id="empty-circle-3"
             style={{ display: "none" }}
-          ></div>
+          >3</div>
           <div
             className="circle"
             id="empty-circle-4"
             style={{ display: "none" }}
-          ></div>
+          >4</div>
           <div
             className="circle"
             id="empty-circle-5"
             style={{ display: "none" }}
-          ></div>
+          >5</div>
         </div>
       </div>
       <div className="circles-container">
