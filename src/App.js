@@ -1,5 +1,7 @@
 import { useState } from "react";
 import "./App.css";
+import { Circle_Container } from "./Components/Circle-Container";
+import { Empty_Container } from "./Components/Empty-Container";
 
 function App() {
   const [value, setValue] = useState("");
@@ -13,53 +15,11 @@ function App() {
     document.getElementById(`empty-circle-${value}`).style.display = "block";
     setValue("")
   };
-  const onEmptyCircles = (e) => {
-    var val = e.target.id
-    document.getElementById(`${val}`).style.display = "none";
-    var new_circle = val.replace("empty-", "")
-    document.getElementById(`${new_circle}`).style.display = "block";
-  }
+
   return (
     <div className="parentContainer">
-      <div className="empty-circles-container">
-        <p className="text-center">Empty Div</p>
-        <div className="empty-circles" onClick={(e)=>onEmptyCircles(e)}>
-          <div
-            className="circle"
-            id="empty-circle-1"
-            style={{ display: "none" }}
-          >1</div>
-          <div
-            className="circle"
-            id="empty-circle-2"
-            style={{ display: "none" }}
-          >2</div>
-          <div
-            className="circle"
-            id="empty-circle-3"
-            style={{ display: "none" }}
-          >3</div>
-          <div
-            className="circle"
-            id="empty-circle-4"
-            style={{ display: "none" }}
-          >4</div>
-          <div
-            className="circle"
-            id="empty-circle-5"
-            style={{ display: "none" }}
-          >5</div>
-        </div>
-      </div>
-      <div className="circles-container">
-        <p className="text-center">5 Circles</p>
-        <div className="circle" id="circle-1">1</div>
-        <div className="circle" id="circle-2">2</div>
-        <div className="circle" id="circle-3">3</div>
-        <div className="circle" id="circle-4">4</div>
-        <div className="circle" id="circle-5">5</div>
-      </div>
-
+      <Empty_Container/>
+      <Circle_Container/>
       <div className="input-container">
         <input
           type="number"
