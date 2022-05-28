@@ -3,7 +3,7 @@ import React from 'react'
 import { Circle_Container } from "./Circle-Container";
 
 
-it('check is Empty_Container is loaded', () => {
+it('check is Circle_Container is loaded', () => {
   const component = shallow(<Circle_Container />);
   expect(component).toBeTruthy()
   expect(component.getElements()).toMatchSnapshot();
