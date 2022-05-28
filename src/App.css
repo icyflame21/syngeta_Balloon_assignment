@@ -1,38 +1,116 @@
-.App {
-  text-align: center;
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.parentContainer{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 20px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.circles-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  gap: 30px;
+  margin: 0 auto;
+}
+.empty-circles-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 30px;
+  margin-left: 8%;
+  width: 400px;
+  height: fit-content;
+  border-radius: 5px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border: 1px solid gray;
+  padding: 20px;
+}
+.empty-circles{
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  cursor: pointer;
+}
+.input-container{
+  margin-right: 8%;
+  display: flex;
+  flex-direction: column
 }
 
-.App-link {
-  color: #61dafb;
+.text-center {
+  text-align: center;
+  font-weight: 500;
 }
+#number{
+  padding: 10px;
+  font-size: 18px;
+  margin: 8px;
+  width: 280px;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border: 1px solid grey;
+}
+.submit{
+  padding: 10px;
+  font-size: 18px;
+  margin: 8px;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  width: fit-content;
+  margin: auto;
+  cursor: pointer;
+  color: aliceblue;
+  background-color: black;
+  border: 1px solid grey;
+}
+.submit:focus{
+  background-color: aliceblue;
+  color: black;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+.circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+#circle-1,
+#empty-circle-1 {
+  background-color: rgba(0, 255, 255, 0.229);
+  border: 2px solid rgba(0, 255, 255, 0.848);
+}
+#circle-2,
+#empty-circle-2 {
+  background-color: rgba(0, 128, 0, 0.226);
+  border: 2px solid rgba(0, 128, 0, 0.848);
+}
+#circle-3,
+#empty-circle-3 {
+  background-color: rgba(0, 0, 255, 0.229);
+  border: 2px solid rgba(0, 0, 255, 0.848);
+}
+#circle-4,
+#empty-circle-4 {
+  background-color: rgba(128, 0, 128, 0.229);
+  border: 2px solid rgba(128, 0, 128, 0.848);
+}
+#circle-5,
+#empty-circle-5 {
+  background-color: rgba(255, 255, 0, 0.229);
+  border: 2px solid rgba(255, 255, 0, 0.48);
 }
