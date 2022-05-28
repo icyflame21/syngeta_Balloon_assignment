@@ -8,7 +8,7 @@ export const Input_Container = () => {
   const onSubmit = () => {
     if (value > 5 || value < 1) alert("Please enter a number between 1 to 5");
     let val = document.getElementById(`empty-circle-${value}`);
-    if (val.style.display == "block")
+    if (val.style.display === "block")
       alert(
         "Number already present in the container\nEnter a different number"
       );
@@ -22,7 +22,7 @@ export const Input_Container = () => {
       <input
         type="number"
         id="number"
-        autoFocus="true"
+        autoFocus={true}
         placeholder="Enter a number between 1 to 5"
         value={value}
         onChange={(e) => {
