@@ -37,7 +37,7 @@ download the .zip file. Extract the contents of the zip file, then open your ter
 > npm install
 > npm test
 ```
-Results are collected in __snapshots__ folder 
+Results are collected in __snapshots__ (temporary) folder 
 
 ## Tech Stack 💻
 
