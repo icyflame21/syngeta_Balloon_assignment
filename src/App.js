@@ -64,6 +64,7 @@ function App() {
         <input
           type="number"
           id="number"
+          autoFocus="true"
           placeholder="Enter a number between 1 to 5"
           value={value}
           onChange={(e) => {
