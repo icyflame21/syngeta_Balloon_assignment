@@ -1,8 +1,10 @@
 import React, { useState} from "react";
 
 export const Input_Container = () => {
-  const [value, setValue] = useState("");
-
+    const [value, setValue] = useState("");
+    
+// onSubmit function udpates the state "setValue" as per the entered the number , afterwards respective styles is been applied to each circle present in the circle container
+    
   const onSubmit = () => {
     if (value > 5 || value < 1) alert("Please enter a number between 1 to 5");
     let val = document.getElementById(`empty-circle-${value}`);

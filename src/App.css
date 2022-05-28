@@ -1,19 +1,25 @@
+/* Removing default Arrows from Input type Number  */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
+/* Universal Selector Rules */
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
+/* Css For parentContainer used in App.jsx file */
 .parentContainer{
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   margin-top: 20px;
 }
+
+/* Css For Circles-Container used in Circle-Container.jsx file */
 .circles-container {
   display: flex;
   flex-direction: column;
@@ -22,6 +28,8 @@ input::-webkit-inner-spin-button {
   gap: 30px;
   margin: 0 auto;
 }
+
+/* Css For Empty-Container used in Empty-Container.jsx file */
 .empty-circles-container {
   display: flex;
   flex-direction: column;
@@ -42,16 +50,18 @@ input::-webkit-inner-spin-button {
   gap: 20px;
   cursor: pointer;
 }
+/* ------------------------------------------------------- */
+.text-center {
+  text-align: center;
+  font-weight: 500;
+}
+/*  Css For Input-Container used in Input-Container.jsx file */
 .input-container{
   margin-right: 8%;
   display: flex;
   flex-direction: column
 }
 
-.text-center {
-  text-align: center;
-  font-weight: 500;
-}
 #number{
   padding: 10px;
   font-size: 18px;
@@ -91,6 +101,9 @@ input::-webkit-inner-spin-button {
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   border: none;
 }
+/* ---------------------------------------------------------------- */
+
+/* Css used in making circles */
 .circle {
   width: 100px;
   height: 100px;

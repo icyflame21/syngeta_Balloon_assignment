@@ -1,6 +1,9 @@
 import React from 'react'
 
 export const Empty_Container = () => {
+  
+  // onEmptyCircles function checks for which particular circle with that id is clicked and returns it respective styles
+
     const onEmptyCircles = (e) => {
         let val = e.target.id
         document.getElementById(`${val}`).style.display = "none";
