@@ -23,8 +23,6 @@ ReactJs--Balloon--Assignment, A clean maintainable code in ReactJs 16+ version e
 > npm install
 > npm test
 ```
-***Results are collected in __snapshots__ (temporary) folder***
-
 ## Tech Stack 💻
 
 - React
